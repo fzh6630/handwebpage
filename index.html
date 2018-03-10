@@ -6,7 +6,6 @@
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="MobileOptimized" content="320" />
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1" />
-	<script src="../../js/ios-orientationchange-fix.min.js"></script>
 	<style>
 	body {
 		font-family: Helvetica, Arial, sans-serif;
@@ -36,13 +35,13 @@
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="jquery.rwdImageMaps.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
 <script>
 $(document).ready(function(e) {
 	$('img[usemap]').rwdImageMaps();
 	
 	$('area').on('click', function() {
-		alert($(this).attr('alt') + ' clicked');
+		// alert($(this).attr('alt') + ' clicked');
 	});
 });
 </script>
